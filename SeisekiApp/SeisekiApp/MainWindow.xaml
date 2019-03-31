@@ -1,0 +1,24 @@
+﻿<Window x:Class="SeisekiApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SeisekiApp"
+        mc:Ignorable="d" Height="316" Width="422.5" Background="White" Title="成績カリキュレーター" Icon="address_book_pad.ico">
+    <Grid>
+        <TextBox x:Name="Kokugo" HorizontalAlignment="Left" Height="23" Margin="60,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="Sugaku" HorizontalAlignment="Left" Height="23" Margin="60,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="Eigo" HorizontalAlignment="Left" Height="23" Margin="60,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="国語" HorizontalAlignment="Left" Height="28" Margin="24,60,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label Content="数学" HorizontalAlignment="Left" Height="28" Margin="24,88,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label Content="英語" HorizontalAlignment="Left" Height="27" Margin="24,116,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="合計" HorizontalAlignment="Left" Height="34" Margin="60,219,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Label x:Name="Sumedscore" Content="" HorizontalAlignment="Left" Height="26" Margin="60,170,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="合計:" HorizontalAlignment="Left" Height="27" Margin="24,169,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="-0.443,0.648"/>
+        <Button x:Name="Help_Button" Content="使い方" HorizontalAlignment="Left" Height="34" Margin="258,60,0,0" VerticalAlignment="Top" Width="115" Click="Button_Click_1"/>
+        <Label Content="成績カリキュレーター（3科目版）" HorizontalAlignment="Left" Height="36" Margin="60,10,0,0" VerticalAlignment="Top" Width="292" FontStyle="Italic" FontSize="22"/>
+        <Button Content="平均" HorizontalAlignment="Left" Height="34" Margin="258,219,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_2"/>
+        <Label x:Name="Avgscore" Content="" HorizontalAlignment="Left" Height="26" Margin="258,170,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="平均:" HorizontalAlignment="Left" Height="27" Margin="222,169,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="-0.443,0.648"/>
+    </Grid>
+</Window>
